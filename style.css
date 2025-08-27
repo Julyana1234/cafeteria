@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Verdana, Helvetica;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #c49679;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+
+hr {
+    border-color: #804d2e;
+
+}
+
+.imagem-topo {
+    background-image: url(coffe.jpg);
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.7);
+    /*Diminuir o brilho da imagem*/
+}
+
+.menu ul {
+    margin: 0;
+    padding-right: 2%;
+
+}
+
+.lista-1 {
+    margin-top: 0;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+
+
+}
+
+.lista-1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 1%;
+    align-items: center;
+
+}
+
+.menu ul li a:hover {
+    color: #d89b7d;
+}
+
+.logotipo {
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+/*ESCOPO*/
+
+.texto-esquerda {
+    margin: 5% 0 0 20%;
+    display: inline-block;
+
+}
+
+.img-esquerda,
+.img-direita,
+.img-menu {
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.texto-div-esquerda {
+    display: inline-block;
+    width: 40%;
+    margin-left: 3%;
+    vertical-align: top;
+}
+
+.texto-div-esquerda h3,
+.texto-div-direita h3,
+.titulo-menu,
+.titulo-reserva h3, .titulo-mapa {
+    color: #804d2e;
+    font-family: Courier New, monospace;
+    font-size: 40px;
+
+}
+
+/**/
+.texto-direita {
+    text-align: right;
+    margin: 5% 20% 5% 0;
+}
+
+.texto-div-direita {
+    text-align: right;
+    display: inline-block;
+    width: 40%;
+    margin-right: 3%;
+    vertical-align: top;
+}
+
+/*falta colocar o texto do lado da imagem*/
+.titulo-menu {
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    /*para telas menores*/
+    .menu-comida {
+        margin: 2% 0 5% 5%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .menu-comida-2 {
+        margin: 2% 0 5% 1%;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .div-menu-comida {
+        display: inline-block;
+        width: 40%;
+        margin-left: 3%;
+        vertical-align: top;
+    }
+
+
+/**/
+
+    .reserva-esquerda {
+        margin: 2% 0 5% 28%;
+        position: relative;
+        display: inline-block;
+    
+    }
+    
+    .reserva-direita {
+        margin: 2% 0 5% 5%;
+        display: inline-block;
+        position: absolute;
+        display: inline-block;
+    
+    }
+
+    .reserva-esquerda input, .reserva-direita input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1700px) {
+
+    /*para telas maiores*/
+    .menu-comida {
+        margin: 2% 0 5% 20%;
+        display: inline-block;
+        position: relative;
+    }
+
+
+    .div-menu-comida {
+        display: inline-block;
+        width: 40%;
+        margin-left: 3%;
+        vertical-align: top;
+    }
+
+    .menu-comida-2 {
+        margin: 2% 0 5% 3%;
+        display: inline-block;
+        position: absolute;
+    }
+
+/**/
+
+
+    .reserva-esquerda {
+        margin: 2% 0 5% 22%;
+        position: relative;
+        display: inline-block;
+    
+    }
+    
+    .reserva-direita {
+        margin: 2% 0 5% 20%;
+        display: inline-block;
+        position: absolute;
+        display: inline-block;
+    
+    }
+
+    .reserva-esquerda input, .reserva-direita input {
+        width: 200%;
+    }
+}
+
+
+.titulo-reserva h3 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.titulo-reserva p {
+    text-align: center;
+}
+
+.sessao-reserva {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-esquerda input, .reserva-direita input {
+    color: #000000;
+    font-size: 24px;
+    border-radius: 6px;
+    background: #804d2e;
+    border: 1px solid #000000;
+    height: 5%;
+}
+
+.reserva-esquerda div, .reserva-direita div {
+    padding-bottom: 6%;
+    height: 40%
+}
+/*arrumar o botão*/
+.btn-reserva {
+    background-color: #804d2e;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 5px 10px ;
+
+}
+
+.btn-reserva:hover{
+    background-color: #a1613a;
+}
+
+.btn-alinhar{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*LOCALIZAÇÃO*/
+
+.titulo-mapa{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.mapa {
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+    padding-bottom: 40px;
+}
+
+/*footer*/
+footer {
+    background-color: #804d2e;
+}
+.titulo-contato {
+    color: #000000;
+    font-family: Courier New, monospace;
+    font-size: 24px;
+    padding-top: 2%;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 0.5%;
+}
